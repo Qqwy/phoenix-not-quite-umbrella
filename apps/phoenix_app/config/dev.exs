@@ -19,7 +19,8 @@ config :phoenix_app, PhoenixAppWeb.Endpoint,
       "--watch-stdin",
       cd: Path.expand("../assets", __DIR__)
     ]
-  ]
+  ],
+  reloadable_apps: [:phoenix_app]
 
 # ## SSL Support
 #
